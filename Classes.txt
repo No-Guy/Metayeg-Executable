@@ -1,0 +1,11 @@
+fish 0 0 170 170
+clownfish 1 250 110 25
+mantaray 2 40 40 40
+jellyfish 3 255 90 210
+seaturtule 4 65 150 60
+dolphin 5 100 100 100
+shark 6 110 60 60
+seal 7 200 200 200
+swordfish 8 110 110 170
+butterflyfish 9 240 240 50
+
