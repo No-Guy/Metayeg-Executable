@@ -8,3 +8,6 @@ fixed sidebartitle name overflow
 
 2.3.1
 improved Dynamic resizing
+
+2.3.2
+Fixed offsets at different scaleFactors
