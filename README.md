@@ -19,3 +19,6 @@ Backspace can delete a new Rectangle(like escape)
 2.3.4
 Improved Check Consistency 
 Toggle Edit Mode using M3(Middle Mouse button)
+
+2.3.5
+Added Support for Preprocessed Models

@@ -2,12 +2,19 @@ try:
     from ultralytics import YOLO
     import os
     import sys
+    import torch
+    from Preprocess import Proc
+    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     model = YOLO(sys.argv[1]) 
-    model.cuda()
+    model.to(device)
     cwd = os.getcwd()
     imgpath = sys.argv[2]
-    files = os.listdir(cwd)
-    results = model(imgpath,conf = float(sys.argv[3]))
+
+    results = 0
+    if(sys.argv[1][-4] == 'p'):
+        results = model(Proc(imgpath),conf = float(sys.argv[3]))
+    else:
+        results = model(imgpath,conf = float(sys.argv[3]))
     nested_list = results[0].boxes.xywhn.tolist()
     clss = results[0].boxes.cls.tolist()
     for i in range(len(nested_list)):
