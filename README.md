@@ -22,3 +22,6 @@ Toggle Edit Mode using M3(Middle Mouse button)
 
 2.3.5
 Added Support for Preprocessed Models
+
+2.3.6
+Fixed scrollwheel crash when the label is empty
