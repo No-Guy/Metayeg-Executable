@@ -1,4 +1,5 @@
-Metayeg
+Metayeg:
+
 A powerful windows application to label(manually or using a model) and view YOLO-formatted labels.
 
 
